@@ -124,9 +124,6 @@ if __name__ == "__main__":
         print("1 - График продаж товаров")
         print("2 - График прихода трафика")
         print("3 - Остатки товаров")
-        print("4 - Возвраты покупателями")  
-        print("5 - Возвраты для поставщиков")  
-
         print('9 - Обновление таблиц с данными для их актуализации') 
         print("0 - Выход")
         choice = input("Введите номер: ").strip()
@@ -139,12 +136,6 @@ if __name__ == "__main__":
             tr.start(trafficend)
         elif choice == '3':
             ist.start(in_stock_edit())
-        elif choice == '4':
-            returns_edit()
-            pass
-        elif choice == '5':
-
-            pass
         elif choice == '9':
             product_sales_data_edit() #  создание таблицы для product-sales
             traffic_edit()        #создание таблицы для трафика
@@ -153,4 +144,5 @@ if __name__ == "__main__":
         elif choice == '0':
             print("Выход из программы")
             break
+
 
